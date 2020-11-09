@@ -17,7 +17,7 @@ To use the application, clone the code to your local machine. Then run:
 2. Enter "mysql -u root -p" 
 3. After inputing the above in the termainal, it will prompt for your mySQL password.
 4. Then enter "use employees"
-5. Seed the database in the mysql CLI with <source .db/schema.sql>
+5. Seed the database in the mysql CLI with "source .db/schema.sql"
 6. Once seeded, you may exit the CLI by entering "quit".
 7. Start the application by running "node index" or "node index.js" or "npm start"
 
