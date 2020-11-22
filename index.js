@@ -53,7 +53,7 @@ function promptUser() {
     }
   ]).then(res => {
     let choice = res.choice;
-    // Call the appropriate function depending on what the user chose
+    // Call function depending on what user chooses
     switch (choice) {
       case "VIEW_EMPLOYEES":
         viewEmployees();
@@ -94,7 +94,7 @@ function viewEmployees() {
     .then(() => promptUser());
 }
 
-// Update an employee's role
+// Update employee role
 function updateEmployeeRole() {
   db.findAllEmployees()
     .then(([rows]) => {
@@ -138,7 +138,7 @@ function updateEmployeeRole() {
     })
 }
 
-// View all roles
+// View roles
 function viewRoles() {
   db.findAllRoles()
     .then(([rows]) => {
@@ -149,7 +149,7 @@ function viewRoles() {
     .then(() => promptUser());
 }
 
-// Add a role
+// Add role
 function addRole() {
   db.findAllDepartments()
     .then(([rows]) => {
@@ -183,7 +183,7 @@ function addRole() {
     })
 }
 
-// View all deparments
+// View deparments
 function viewDepartments() {
   db.findAllDepartments()
     .then(([rows]) => {
@@ -194,7 +194,7 @@ function viewDepartments() {
     .then(() => promptUser());
 }
 
-// Add a department
+// Add department
 function addDepartment() {
   prompt([
     {
@@ -210,7 +210,7 @@ function addDepartment() {
     })
 }
 
-// Add an employee
+// Add employee
 function addEmployee() {
   prompt([
     {
@@ -279,7 +279,7 @@ function addEmployee() {
     })
 }
 
-// Exit the application
+// Exit application
 function quit() {
   console.log("Goodbye!");
   process.exit();
